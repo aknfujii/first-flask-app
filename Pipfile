@@ -8,11 +8,8 @@ pylint = "*"
 
 [packages]
 flask = "*"
-flask-sqaichemy = "*"
-flask-sqalchemy = "*"
 flask-sqlalchemy = "*"
 flask-script = "*"
-sqlalchemy = "*"
 coverage = "*"
 
 [requires]
