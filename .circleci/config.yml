@@ -1,12 +1,12 @@
-version: 2.1
+# version: 2.1
 
-orbs:
-    hello: circleci/hello-build@0.0.7 # circleci/buildpack-deps Docker イメージを使います
+# orbs:
+#     hello: circleci/hello-build@0.0.7 # circleci/buildpack-deps Docker イメージを使います
 
-workflows:
-    "Hello Workflow":
-        jobs:
-          - hello/hello-build
+# workflows:
+#     "Hello Workflow":
+#         jobs:
+#           - hello/hello-build
 
 version: 2
 jobs:
