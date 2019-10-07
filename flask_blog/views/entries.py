@@ -60,3 +60,12 @@ def delete_entry(id):
     db.session.commit()
     flash('記事が削除されました')
     return redirect(url_for('entry.show_entries'))
+
+@app.route('/search/', methods=['GET'])
+def search():
+    query = request.args.get("query")
+    entries=Entry.query.order_by(Entry.id.desc()).all()
+    if query:
+        return render_template('entires/search.html', entries=entries, query=query)
+    # return render_template('entires/search.html')
+    return redirect(url_for('entry.show_entries'))
